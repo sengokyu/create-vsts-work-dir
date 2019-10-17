@@ -1,0 +1,9 @@
+#!/bin/sh
+
+TARGET_DIR=/mnt/vstswork
+
+if [ ! -d ${TARGET_DIR} ]; then
+        mkdir ${TARGET_DIR}
+fi
+
+chown vstsagent:vstsagent ${TARGET_DIR}
